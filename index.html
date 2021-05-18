@@ -2,45 +2,83 @@
 <html>
 <style>
     .logo {
-        padding: 50px 20px 10px 20px;
+        padding: 80px 20px 10px 20px;
         margin: 10px auto;
         text-align: center;
     }
     .form {
         margin: auto;
         height: 20px;
-        width: 25em ;
+        width: 35em ;
         background-color: rgba(241, 231, 231, 0.87)
+        border-radius: 5px;
+        text-align: center;
+    }
+    form {
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30%;
+        width: 30px;
+    }
+    input {
+        width: 550px;
+        border-radius: 25px;
+        height: 40px;
+        padding-top: 15px;
+        border-color: rgba(224, 223, 223, 0.301);
     }
     ul {
-        margin: 0;
+        margin: 10px 15px 10px 15px;
         padding: 0;
         overflow: hidden;
         list-style-type: none;
-        background-color: rgb(226, 220, 220);
+        background-color: transparent;
     }
     li {
         display: inline;
         float: left;
-        background-color: rgb(163, 151, 151);
-        padding: 10px 25px 10px 15px;
+        background-color: transparent;
+        padding: 10px 10px 10px 10px;
+        font-family: "Arial";
+        font-size: 13px;
 
+    }
+    button {
+        text-align: center;
+        border: none;
+        height: 33px;
+        padding: 0px 15px 0px 15px;
+        margin: 10px 5px 10px 5px;
+        font-size: 13px;
+        background-color: rgba(212, 204, 204, 0.164);
+    }
+    h1 {
+        text-align: center;
+        padding-top: 20px;
     }
 </style>
 
 <body>
     <ul>
         <li>About</li>
-        <li style="float: right">Store</li>
         <li style="float: right">Gmail</li>
-        <li>Images</li>
-
+        <li style="float: right">Images</li>
+        <li>Stores</li>
+        <li style="float: right">
+            <img  width="15px" src="https://www.pngix.com/pngfile/middle/112-1128226_png-file-svg-google-apps-icon-png-transparent.png">
+        </li>
     </ul>
     <div class="logo">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
     </div>
-    <div class="form"> 
-    </div>
+    <form class="form">
+        <input type="search" id="query" name="q" >
+    </form>
+
 </body>
+<h1>
+    <button>Google Search </button>
+    <button>I'm Feeling Lucky</button>
+</h1>
 
 </html>
